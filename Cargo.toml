@@ -1,0 +1,33 @@
+[package]
+name = "appxgen-backend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix = "^4"
+actix-cors = "0.6.2"
+actix-service = "2.0.2"
+actix-http = "3.2.2"
+blob-uuid = "0.5.0"
+chrono = "0.4.22"
+diesel = { version = "2.0.0", features = ["chrono", "postgres", "r2d2", "uuidv07", "serde_json"] }
+dotenv = "0.15.0"
+env_logger = "0.6.1"
+failure = "0.1.8"
+futures = "0.3.24"
+http = "0.2.8"
+jsonwebtoken = "8.1.1"
+lazy_static = "1.4.0"
+libreauth = "0.15.0"
+log = "0.4.17"
+num_cpus = "1.13.1"
+regex = "1.6.0"
+serde = "1.0.144"
+serde_derive = "1.0.144"
+serde_json = "1.0.85"
+slug = "0.1.4"
+uuid = { version = "1.1.2", features = ["serde", "v4"] }
+validator = "0.16.0"
+validator_derive = "0.16.0"
